@@ -1,0 +1,87 @@
+.otp-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.otp-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    position: relative;
+}
+
+.logo {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.phone-input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.phone-input-container span {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-right: 1px solid #ccc;
+    font-size: 14px;
+    color: #666;
+}
+
+.phone-input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.phone-input:focus {
+    outline: none;
+}
+
+.error-message {
+    color: red; /* Error message color */
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.continue-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    cursor: not-allowed;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.continue-btn.active {
+    background-color: green;
+    cursor: pointer;
+}
+
+.terms {
+    font-size: 12px;
+    color: #666;
+}
+
+.terms a {
+    color: #007BFF;
+    text-decoration: none;
+}
+.google-login {
+    margin-top: 20px;
+  }
+  
