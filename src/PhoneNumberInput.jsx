@@ -75,14 +75,14 @@
 
 
 import React, { useState } from 'react';
-import './PhoneNumberInput.css'; // Ensure this file includes styling for phone number input
+import './PhoneNumberInput.css';
 
 const PhoneNumberInput = ({ onContinue }) => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [error, setError] = useState("");
 
   const handlePhoneNumberChange = (e) => {
-    const value = e.target.value.replace(/\D/g, ''); // Remove non-digit characters
+    const value = e.target.value.replace(/\D/g, '');
     if (value.length <= 10) {
       setPhoneNumber(value);
       setError(value.length === 10 ? "" : "Enter Valid Number");
@@ -92,7 +92,7 @@ const PhoneNumberInput = ({ onContinue }) => {
   return (
     <div className="otp-container">
       <div className="otp-box">
-        <img src='/logo.png' alt="Logo" className="logo" /> {/* Update with the correct logo image path */}
+        <img src='/logo.png' alt="Logo" className="logo" /> {}
         <h2>India's last minute app</h2>
         <p>Log in or Sign up</p>
         <div className="phone-input-container">
